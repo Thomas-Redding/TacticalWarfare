@@ -27,19 +27,23 @@ MainMenu::MainMenu(sf::RenderWindow &w, Controller* parentApp) :Controller(w), u
     
     // Home
     pages.push_back(MenuPage());
-    pages[0].labels.push_back(sf::Text("Home Page Label", font, 100));
+    pages[0].labels.push_back(sf::Text("Home Page", font, 100));
     sf::FloatRect rect = pages[0].labels[0].getGlobalBounds();
     pages[0].labels[0].setPosition(screenSize.x/2.0 - rect.width/2.0, screenSize.x/10.0);
     pages[0].buttons.push_back(MenuButton("Log In", &buttonTexture, &font));
     pages[0].buttons[0].size = screenSize.x/3.0;
     pages[0].buttons[0].center(screenSize);
+    pages[0].buttons[0].y += screenSize.x/15.0;
+    pages[0].buttons.push_back(MenuButton("Single Player", &buttonTexture, &font));
+    pages[0].buttons[1].size = screenSize.x/3.0;
+    pages[0].buttons[1].center(screenSize);
     
     // Login
     pages.push_back(MenuPage());
-    pages[1].labels.push_back(sf::Text("Log In Label", font, 100));
+    pages[1].labels.push_back(sf::Text("Log In", font, 100));
     rect = pages[1].labels[0].getGlobalBounds();
     pages[1].labels[0].setPosition(screenSize.x/2.0 - rect.width/2.0, screenSize.x/10.0);
-    pages[1].buttons.push_back(MenuButton("Home", &buttonTexture, &font));
+    pages[1].buttons.push_back(MenuButton("Back", &buttonTexture, &font));
     pages[1].buttons[0].size = screenSize.x/3.0;
     pages[1].buttons[0].x = 0;
     pages[1].buttons[0].y = 0;
@@ -48,19 +52,38 @@ MainMenu::MainMenu(sf::RenderWindow &w, Controller* parentApp) :Controller(w), u
     pages[1].buttons[1].center(screenSize);
     pages[1].buttons[1].y += screenSize.x/7.5;
     
+    pages[1].labels.push_back(sf::Text("Username:", font, 50));
+    rect = pages[1].labels[1].getGlobalBounds();
+    pages[1].labels[1].setPosition(0.0, screenSize.y/2.0 - screenSize.x/15.0 - 30);
     usernameTextBox.setSize(screenSize.x/2.0, screenSize.x/20.0);
     usernameTextBox.center(screenSize);
     usernameTextBox.setPosition(usernameTextBox.getPosition().x, usernameTextBox.getPosition().y - screenSize.x/15.0);
     serverIpTextBox.maxCharacterLength = 10;
     
+    pages[1].labels.push_back(sf::Text("Server IP:", font, 50));
+    rect = pages[1].labels[2].getGlobalBounds();
+    pages[1].labels[2].setPosition(0.0, screenSize.y/2.0 - 30);
     serverIpTextBox.setSize(screenSize.x/2.0, screenSize.x/20.0);
     serverIpTextBox.center(screenSize);
     serverIpTextBox.maxCharacterLength = 20;
     
+    pages[1].labels.push_back(sf::Text("Port #:", font, 50));
+    rect = pages[1].labels[3].getGlobalBounds();
+    pages[1].labels[3].setPosition(0.0, screenSize.y/2.0 + screenSize.x/15.0 - 30);
     portTextBox.setSize(screenSize.x/2.0, screenSize.x/20.0);
     portTextBox.center(screenSize);
     portTextBox.setPosition(portTextBox.getPosition().x, portTextBox.getPosition().y + screenSize.x/15.0);
     portTextBox.maxCharacterLength = 5;
+    
+    // Single Player
+    pages.push_back(MenuPage());
+    pages[2].labels.push_back(sf::Text("Single Player", font, 100));
+    rect = pages[2].labels[0].getGlobalBounds();
+    pages[2].labels[0].setPosition(screenSize.x/2.0 - rect.width/2.0, screenSize.x/10.0);
+    pages[2].buttons.push_back(MenuButton("Back", &buttonTexture, &font));
+    pages[2].buttons[0].size = screenSize.x/3.0;
+    pages[2].buttons[0].x = 0;
+    pages[2].buttons[0].y = 0;
 }
 
 void MainMenu::think() {
@@ -112,13 +135,21 @@ void MainMenu::buttonClicked(int index) {
         if(pages[pageNum].buttons[index].label == "Log In") {
             pageNum = MainMenuPageName_Login;
         }
+        else if(pages[pageNum].buttons[index].label == "Single Player") {
+            pageNum = MainMenuPageName_SinglePlayer;
+        }
     }
     else if(pageNum == MainMenuPageName_Login) {
-        if(pages[pageNum].buttons[index].label == "Home") {
+        if(pages[pageNum].buttons[index].label == "Back") {
             pageNum = MainMenuPageName_Home;
         }
-        else {
+        else if(pages[pageNum].buttons[index].label == "Sign In") {
             app->sendMessage("Attempt Login\n" + usernameTextBox.getValue() + "\n" + serverIpTextBox.getValue() + "\n" + portTextBox.getValue());
+        }
+    }
+    else if(pageNum == MainMenuPageName_SinglePlayer) {
+        if(pages[pageNum].buttons[index].label == "Back") {
+            pageNum = MainMenuPageName_Home;
         }
     }
 }

@@ -20,7 +20,8 @@
 
 enum MainMenuPageName {
     MainMenuPageName_Home = 0,
-    MainMenuPageName_Login = 1
+    MainMenuPageName_Login = 1,
+    MainMenuPageName_SinglePlayer = 2
 };
 
 class MainMenu : Controller {
