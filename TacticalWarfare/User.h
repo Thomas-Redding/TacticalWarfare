@@ -16,11 +16,16 @@ struct User {
     User();
     std::string username;
     std::string password;
-    size_t id;
-    sf::IpAddress _address;
-    unsigned short _port;
+    sf::IpAddress address;
+    unsigned short port;
 
     inline bool operator==(const User& a) const;
+    
+    inline size_t getId() const;
+    
+private:
+    
+    size_t id;
     
     static size_t numberCreated;
 };

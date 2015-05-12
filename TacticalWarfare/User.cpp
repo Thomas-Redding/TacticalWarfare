@@ -17,3 +17,7 @@ User::User() : id(numberCreated) {
 bool User::operator==(const User &a) const {
     return id == a.id;
 }
+
+inline size_t User::getId() const {
+    return id;
+}
