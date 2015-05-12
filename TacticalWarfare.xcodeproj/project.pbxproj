@@ -7,52 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		280362871AFF157B00F44DC4 /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 280362861AFF157B00F44DC4 /* TextBox.cpp */; };
 		28130D831AF8FD73009E3B3B /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28130D821AF8FD73009E3B3B /* ResourcePath.mm */; };
 		28130D861AF8FD73009E3B3B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28130D851AF8FD73009E3B3B /* main.cpp */; };
-		28130D891AF8FD73009E3B3B /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28130D881AF8FD73009E3B3B /* cute_image.jpg */; };
-		28130D8B1AF8FD73009E3B3B /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 28130D8A1AF8FD73009E3B3B /* nice_music.ogg */; };
-		28130D8D1AF8FD73009E3B3B /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28130D8C1AF8FD73009E3B3B /* sansation.ttf */; };
-		28130D8F1AF8FD73009E3B3B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28130D8E1AF8FD73009E3B3B /* icon.png */; };
-		28130DA21AF90382009E3B3B /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28130DA11AF90382009E3B3B /* button.png */; };
 		28130DA51AF90592009E3B3B /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28130DA31AF90592009E3B3B /* App.cpp */; };
-		282F23A21B013E4E00D36057 /* NetworkHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 282F23A01B013E4E00D36057 /* NetworkHandler.cpp */; };
-		283C78B41B025DBA00E034CB /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 283C78B21B025DBA00E034CB /* Server.cpp */; };
+		284D8F7B1B0278200094DAB5 /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F691B0278200094DAB5 /* TextBox.cpp */; };
+		284D8F7C1B0278200094DAB5 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F6C1B0278200094DAB5 /* Server.cpp */; };
+		284D8F7D1B0278200094DAB5 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F6D1B0278200094DAB5 /* sansation.ttf */; };
+		284D8F7E1B0278200094DAB5 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F6E1B0278200094DAB5 /* nice_music.ogg */; };
+		284D8F7F1B0278200094DAB5 /* NetworkHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F711B0278200094DAB5 /* NetworkHandler.cpp */; };
+		284D8F801B0278200094DAB5 /* MenuPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F731B0278200094DAB5 /* MenuPage.cpp */; };
+		284D8F811B0278200094DAB5 /* MenuButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F751B0278200094DAB5 /* MenuButton.cpp */; };
+		284D8F821B0278200094DAB5 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F771B0278200094DAB5 /* MainMenu.cpp */; };
+		284D8F831B0278200094DAB5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F781B0278200094DAB5 /* icon.png */; };
+		284D8F841B0278200094DAB5 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F791B0278200094DAB5 /* cute_image.jpg */; };
+		284D8F851B0278200094DAB5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F7A1B0278200094DAB5 /* button.png */; };
 		28BEBD151AF934960010F154 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD131AF934960010F154 /* Controller.cpp */; };
-		28BEBD491AF99C8D0010F154 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD471AF99C8D0010F154 /* MainMenu.cpp */; };
-		28BEBD4C1AF99F4B0010F154 /* MenuPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD4A1AF99F4B0010F154 /* MenuPage.cpp */; };
-		28BEBD4F1AF99F780010F154 /* MenuButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD4D1AF99F780010F154 /* MenuButton.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		280362851AFF157B00F44DC4 /* TextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBox.h; sourceTree = "<group>"; };
-		280362861AFF157B00F44DC4 /* TextBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextBox.cpp; sourceTree = "<group>"; };
 		28130D7D1AF8FD73009E3B3B /* TacticalWarfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacticalWarfare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28130D811AF8FD73009E3B3B /* TacticalWarfare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TacticalWarfare-Info.plist"; sourceTree = "<group>"; };
 		28130D821AF8FD73009E3B3B /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		28130D841AF8FD73009E3B3B /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		28130D851AF8FD73009E3B3B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		28130D881AF8FD73009E3B3B /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
-		28130D8A1AF8FD73009E3B3B /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
-		28130D8C1AF8FD73009E3B3B /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
-		28130D8E1AF8FD73009E3B3B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		28130DA11AF90382009E3B3B /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		28130DA31AF90592009E3B3B /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
 		28130DA41AF90592009E3B3B /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
-		282F239E1B013DDF00D36057 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
-		282F23A01B013E4E00D36057 /* NetworkHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkHandler.cpp; sourceTree = "<group>"; };
-		282F23A11B013E4E00D36057 /* NetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHandler.h; sourceTree = "<group>"; };
-		283C78B21B025DBA00E034CB /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
-		283C78B31B025DBA00E034CB /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
-		283C78B61B0260AA00E034CB /* ServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInterface.h; sourceTree = "<group>"; };
+		284D8F681B0278200094DAB5 /* TextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBox.h; sourceTree = "<group>"; };
+		284D8F691B0278200094DAB5 /* TextBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextBox.cpp; sourceTree = "<group>"; };
+		284D8F6A1B0278200094DAB5 /* ServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInterface.h; sourceTree = "<group>"; };
+		284D8F6B1B0278200094DAB5 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		284D8F6C1B0278200094DAB5 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		284D8F6D1B0278200094DAB5 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		284D8F6E1B0278200094DAB5 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		284D8F6F1B0278200094DAB5 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
+		284D8F701B0278200094DAB5 /* NetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHandler.h; sourceTree = "<group>"; };
+		284D8F711B0278200094DAB5 /* NetworkHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkHandler.cpp; sourceTree = "<group>"; };
+		284D8F721B0278200094DAB5 /* MenuPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPage.h; sourceTree = "<group>"; };
+		284D8F731B0278200094DAB5 /* MenuPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuPage.cpp; sourceTree = "<group>"; };
+		284D8F741B0278200094DAB5 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		284D8F751B0278200094DAB5 /* MenuButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuButton.cpp; sourceTree = "<group>"; };
+		284D8F761B0278200094DAB5 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		284D8F771B0278200094DAB5 /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
+		284D8F781B0278200094DAB5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		284D8F791B0278200094DAB5 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		284D8F7A1B0278200094DAB5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		28BEBD131AF934960010F154 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		28BEBD141AF934960010F154 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
-		28BEBD471AF99C8D0010F154 /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
-		28BEBD481AF99C8D0010F154 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
-		28BEBD4A1AF99F4B0010F154 /* MenuPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuPage.cpp; sourceTree = "<group>"; };
-		28BEBD4B1AF99F4B0010F154 /* MenuPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPage.h; sourceTree = "<group>"; };
-		28BEBD4D1AF99F780010F154 /* MenuButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuButton.cpp; sourceTree = "<group>"; };
-		28BEBD4E1AF99F780010F154 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,25 +88,12 @@
 				28130D821AF8FD73009E3B3B /* ResourcePath.mm */,
 				28130D841AF8FD73009E3B3B /* ResourcePath.hpp */,
 				28130D851AF8FD73009E3B3B /* main.cpp */,
-				283C78B21B025DBA00E034CB /* Server.cpp */,
-				283C78B31B025DBA00E034CB /* Server.h */,
-				282F23A01B013E4E00D36057 /* NetworkHandler.cpp */,
-				282F23A11B013E4E00D36057 /* NetworkHandler.h */,
-				282F239E1B013DDF00D36057 /* NetworkInterface.h */,
-				283C78B61B0260AA00E034CB /* ServerInterface.h */,
 				28BEBD131AF934960010F154 /* Controller.cpp */,
 				28BEBD141AF934960010F154 /* Controller.h */,
 				28130DA31AF90592009E3B3B /* App.cpp */,
 				28130DA41AF90592009E3B3B /* App.h */,
-				28BEBD471AF99C8D0010F154 /* MainMenu.cpp */,
-				28BEBD481AF99C8D0010F154 /* MainMenu.h */,
-				28BEBD4A1AF99F4B0010F154 /* MenuPage.cpp */,
-				28BEBD4B1AF99F4B0010F154 /* MenuPage.h */,
-				28BEBD4D1AF99F780010F154 /* MenuButton.cpp */,
-				28BEBD4E1AF99F780010F154 /* MenuButton.h */,
-				280362851AFF157B00F44DC4 /* TextBox.h */,
-				280362861AFF157B00F44DC4 /* TextBox.cpp */,
-				28130D871AF8FD73009E3B3B /* Resources */,
+				284D8F861B0278300094DAB5 /* Network */,
+				284D8F871B02783E0094DAB5 /* Main Menu */,
 				28130D801AF8FD73009E3B3B /* Supporting Files */,
 			);
 			path = TacticalWarfare;
@@ -115,21 +102,42 @@
 		28130D801AF8FD73009E3B3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				284D8F6D1B0278200094DAB5 /* sansation.ttf */,
+				284D8F6E1B0278200094DAB5 /* nice_music.ogg */,
+				284D8F781B0278200094DAB5 /* icon.png */,
+				284D8F791B0278200094DAB5 /* cute_image.jpg */,
+				284D8F7A1B0278200094DAB5 /* button.png */,
 				28130D811AF8FD73009E3B3B /* TacticalWarfare-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		28130D871AF8FD73009E3B3B /* Resources */ = {
+		284D8F861B0278300094DAB5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				28130D881AF8FD73009E3B3B /* cute_image.jpg */,
-				28130DA11AF90382009E3B3B /* button.png */,
-				28130D8A1AF8FD73009E3B3B /* nice_music.ogg */,
-				28130D8C1AF8FD73009E3B3B /* sansation.ttf */,
-				28130D8E1AF8FD73009E3B3B /* icon.png */,
+				284D8F6A1B0278200094DAB5 /* ServerInterface.h */,
+				284D8F6B1B0278200094DAB5 /* Server.h */,
+				284D8F6C1B0278200094DAB5 /* Server.cpp */,
+				284D8F6F1B0278200094DAB5 /* NetworkInterface.h */,
+				284D8F701B0278200094DAB5 /* NetworkHandler.h */,
+				284D8F711B0278200094DAB5 /* NetworkHandler.cpp */,
 			);
-			name = Resources;
+			name = Network;
+			sourceTree = "<group>";
+		};
+		284D8F871B02783E0094DAB5 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				284D8F681B0278200094DAB5 /* TextBox.h */,
+				284D8F691B0278200094DAB5 /* TextBox.cpp */,
+				284D8F721B0278200094DAB5 /* MenuPage.h */,
+				284D8F731B0278200094DAB5 /* MenuPage.cpp */,
+				284D8F741B0278200094DAB5 /* MenuButton.h */,
+				284D8F751B0278200094DAB5 /* MenuButton.cpp */,
+				284D8F761B0278200094DAB5 /* MainMenu.h */,
+				284D8F771B0278200094DAB5 /* MainMenu.cpp */,
+			);
+			name = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,11 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28130D8F1AF8FD73009E3B3B /* icon.png in Resources */,
-				28130DA21AF90382009E3B3B /* button.png in Resources */,
-				28130D8D1AF8FD73009E3B3B /* sansation.ttf in Resources */,
-				28130D8B1AF8FD73009E3B3B /* nice_music.ogg in Resources */,
-				28130D891AF8FD73009E3B3B /* cute_image.jpg in Resources */,
+				284D8F841B0278200094DAB5 /* cute_image.jpg in Resources */,
+				284D8F851B0278200094DAB5 /* button.png in Resources */,
+				284D8F7E1B0278200094DAB5 /* nice_music.ogg in Resources */,
+				284D8F7D1B0278200094DAB5 /* sansation.ttf in Resources */,
+				284D8F831B0278200094DAB5 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,15 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28130D861AF8FD73009E3B3B /* main.cpp in Sources */,
-				28BEBD4C1AF99F4B0010F154 /* MenuPage.cpp in Sources */,
-				283C78B41B025DBA00E034CB /* Server.cpp in Sources */,
-				280362871AFF157B00F44DC4 /* TextBox.cpp in Sources */,
+				284D8F7F1B0278200094DAB5 /* NetworkHandler.cpp in Sources */,
 				28130D831AF8FD73009E3B3B /* ResourcePath.mm in Sources */,
+				284D8F7B1B0278200094DAB5 /* TextBox.cpp in Sources */,
+				284D8F811B0278200094DAB5 /* MenuButton.cpp in Sources */,
 				28BEBD151AF934960010F154 /* Controller.cpp in Sources */,
-				282F23A21B013E4E00D36057 /* NetworkHandler.cpp in Sources */,
+				284D8F7C1B0278200094DAB5 /* Server.cpp in Sources */,
 				28130DA51AF90592009E3B3B /* App.cpp in Sources */,
-				28BEBD491AF99C8D0010F154 /* MainMenu.cpp in Sources */,
-				28BEBD4F1AF99F780010F154 /* MenuButton.cpp in Sources */,
+				284D8F801B0278200094DAB5 /* MenuPage.cpp in Sources */,
+				284D8F821B0278200094DAB5 /* MainMenu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
