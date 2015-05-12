@@ -48,7 +48,8 @@ private:
     int frameCounter = 0;
     
     TextBox usernameTextBox;
-    TextBox passwordTextBox;
+    TextBox serverIpTextBox;
+    TextBox portTextBox;
 };
 
 
