@@ -15,7 +15,6 @@
 		284D8F7D1B0278200094DAB5 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F6D1B0278200094DAB5 /* sansation.ttf */; };
 		284D8F7E1B0278200094DAB5 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F6E1B0278200094DAB5 /* nice_music.ogg */; };
 		284D8F7F1B0278200094DAB5 /* NetworkHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F711B0278200094DAB5 /* NetworkHandler.cpp */; };
-		284D8F801B0278200094DAB5 /* MenuPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F731B0278200094DAB5 /* MenuPage.cpp */; };
 		284D8F811B0278200094DAB5 /* MenuButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F751B0278200094DAB5 /* MenuButton.cpp */; };
 		284D8F821B0278200094DAB5 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284D8F771B0278200094DAB5 /* MainMenu.cpp */; };
 		284D8F831B0278200094DAB5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F781B0278200094DAB5 /* icon.png */; };
@@ -44,7 +43,6 @@
 		284D8F701B0278200094DAB5 /* NetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHandler.h; sourceTree = "<group>"; };
 		284D8F711B0278200094DAB5 /* NetworkHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkHandler.cpp; sourceTree = "<group>"; };
 		284D8F721B0278200094DAB5 /* MenuPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPage.h; sourceTree = "<group>"; };
-		284D8F731B0278200094DAB5 /* MenuPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuPage.cpp; sourceTree = "<group>"; };
 		284D8F741B0278200094DAB5 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
 		284D8F751B0278200094DAB5 /* MenuButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuButton.cpp; sourceTree = "<group>"; };
 		284D8F761B0278200094DAB5 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				284D8F681B0278200094DAB5 /* TextBox.h */,
 				284D8F691B0278200094DAB5 /* TextBox.cpp */,
 				284D8F721B0278200094DAB5 /* MenuPage.h */,
-				284D8F731B0278200094DAB5 /* MenuPage.cpp */,
 				284D8F741B0278200094DAB5 /* MenuButton.h */,
 				284D8F751B0278200094DAB5 /* MenuButton.cpp */,
 				284D8F761B0278200094DAB5 /* MainMenu.h */,
@@ -242,7 +239,6 @@
 				28BEBD151AF934960010F154 /* Controller.cpp in Sources */,
 				284D8F7C1B0278200094DAB5 /* Server.cpp in Sources */,
 				28130DA51AF90592009E3B3B /* App.cpp in Sources */,
-				284D8F801B0278200094DAB5 /* MenuPage.cpp in Sources */,
 				284D8F821B0278200094DAB5 /* MainMenu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

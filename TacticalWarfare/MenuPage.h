@@ -16,11 +16,10 @@
 #include "ResourcePath.hpp"
 #include "MenuButton.h"
 
-class MenuPage {
-public:
-    MenuPage();
+struct MenuPage {
     std::string name;
     std::vector<MenuButton> buttons;
+    std::vector<sf::Text> labels;
 };
 
 #endif /* defined(__TacticalWarfare__MenuPage__) */

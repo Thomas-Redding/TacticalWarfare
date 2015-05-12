@@ -153,7 +153,7 @@ void TextBox::textEntered(int key)
             if(str.length()<maxCharacterLength)
             {
                 if(boxType == 2) {
-                    if(output == "0" || output == "1" || output == "2" || output == "3" || output == "4" || output == "5" || output == "6" || output == "7" || output == "8" || output == "9") {
+                    if(output == "0" || output == "1" || output == "2" || output == "3" || output == "4" || output == "5" || output == "6" || output == "7" || output == "8" || output == "9" || output == ".") {
                         str.insert(cursorSpot, output);
                         cursorSpot++;
                     }
