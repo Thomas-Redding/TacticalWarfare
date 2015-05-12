@@ -60,6 +60,7 @@ int main(int, char const**) {
     networkInterface.sendToServer.push_back("TEST STRING BETA");
     
     ServerInterface serverInterface;
+    serverInterface.shouldServerBeRunning = true;
     
     App app = App(window, networkInterface);
     pthread_t networkThread;
@@ -72,6 +73,7 @@ int main(int, char const**) {
     while (window.isOpen()) {
         if(networkInterface.networkClosingStage == 2) {
             pthread_cancel(networkThread);
+            pthread_cancel(serverThread);
             window.close();
         }
         

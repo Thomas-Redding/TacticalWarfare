@@ -12,8 +12,12 @@
 #include <stdio.h>
 #include <iostream>
 #include <time.h>
+#include <unordered_map>
+
 #include <SFML/Network.hpp>
+
 #include "ServerInterface.h"
+#include "User.h"
 
 class Server {
 public:
@@ -24,7 +28,18 @@ private:
     void checkForUdpMessages();
     void sendMessage(std::string message, sf::IpAddress address, unsigned int port);
     
+    void commandFromNewUser(std::string message, sf::IpAddress address, unsigned short port);
+    void commandFromOldUser(std::unordered_map<size_t, User>::iterator client, std::string message);
+    
+    std::unordered_map<size_t, User> users;
+    
     sf::UdpSocket udpSocket;
+    sf::IpAddress udpAddress;
+    unsigned short udpPort;
+    static const size_t UDP_DATA_LENGTH = 1024;
+    char udpData[UDP_DATA_LENGTH];
+    size_t udpLengthReceived;
+    
     std::vector<std::string> messagesFromClients;
     ServerInterface *interface;
 };
