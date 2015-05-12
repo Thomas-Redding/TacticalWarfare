@@ -13,7 +13,7 @@ Server::Server(ServerInterface &interfaceToUse) {
 }
 
 Server::~Server() {
-    //
+    udpSocket.unbind();
 }
 
 void Server::update() {
@@ -39,20 +39,29 @@ void Server::update() {
 }
 
 void Server::checkForUdpMessages() {
-    static const int UDP_DATA_LENGTH = 1024;
-    char udpData[UDP_DATA_LENGTH];
-    sf::IpAddress udpAddress;
-    unsigned short udpPort;
-    std::size_t udpLengthReceived;
     if(udpSocket.receive(udpData, UDP_DATA_LENGTH, udpLengthReceived, udpAddress, udpPort) != sf::Socket::NotReady) {
         std::string messageFromClient = "";
-        for(int i = 0; i < udpLengthReceived; i++)
-        {
+        for(int i = 0; i < udpLengthReceived; i++) {
             messageFromClient += udpData[i];
         }
-        messagesFromClients.push_back(messageFromClient);
+        
+        std::unordered_map<size_t, User>::iterator it = users.find(udpAddress.toInteger());
+        if(it == users.end()) {
+            commandFromNewUser(messageFromClient, udpAddress, udpPort);
+            return;
+        }
+        commandFromOldUser(it, messageFromClient);
     }
 }
+
+void Server::commandFromNewUser(std::string messageFromClient, sf::IpAddress address, unsigned int short port) {
+    // TODO
+}
+
+void Server::commandFromOldUser(std::unordered_map<size_t, User>::iterator client, std::string message) {
+    // TODO
+}
+
 
 void Server::sendMessage(std::string message, sf::IpAddress address, unsigned int port) {
     char m[message.size()];

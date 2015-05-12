@@ -22,6 +22,7 @@
 		284D8F841B0278200094DAB5 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F791B0278200094DAB5 /* cute_image.jpg */; };
 		284D8F851B0278200094DAB5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F7A1B0278200094DAB5 /* button.png */; };
 		28BEBD151AF934960010F154 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD131AF934960010F154 /* Controller.cpp */; };
+		ECB7D7A21B027C800054501B /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECB7D7A01B027C800054501B /* User.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		284D8F7A1B0278200094DAB5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		28BEBD131AF934960010F154 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		28BEBD141AF934960010F154 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		ECB7D7A01B027C800054501B /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		ECB7D7A11B027C800054501B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				284D8F6A1B0278200094DAB5 /* ServerInterface.h */,
 				284D8F6B1B0278200094DAB5 /* Server.h */,
 				284D8F6C1B0278200094DAB5 /* Server.cpp */,
+				ECB7D7A01B027C800054501B /* User.cpp */,
+				ECB7D7A11B027C800054501B /* User.h */,
 				284D8F6F1B0278200094DAB5 /* NetworkInterface.h */,
 				284D8F701B0278200094DAB5 /* NetworkHandler.h */,
 				284D8F711B0278200094DAB5 /* NetworkHandler.cpp */,
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB7D7A21B027C800054501B /* User.cpp in Sources */,
 				28130D861AF8FD73009E3B3B /* main.cpp in Sources */,
 				284D8F7F1B0278200094DAB5 /* NetworkHandler.cpp in Sources */,
 				28130D831AF8FD73009E3B3B /* ResourcePath.mm in Sources */,
