@@ -24,10 +24,14 @@ public:
     Server(ServerInterface &interface);
     ~Server();
     void update();
-private:
+    
+protected:
     
     // edit this
-    void processUdpMessage(std::string& message, sf::IpAddress address, unsigned short port);
+    virtual void processUdpMessage(std::string& message, sf::IpAddress address, unsigned short port) = 0;
+    ServerInterface *interface;
+    
+private:
     
     void checkForUdpMessages();
     void sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port);
@@ -38,8 +42,6 @@ private:
     static const size_t UDP_DATA_LENGTH = 1024;
     char udpData[UDP_DATA_LENGTH];
     size_t udpLengthReceived;
-    
-    ServerInterface *interface;
 };
 
 #endif /* defined(__TacticalWarfare__Server__) */

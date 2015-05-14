@@ -46,11 +46,6 @@ void Server::checkForUdpMessages() {
     }
 }
 
-void Server::processUdpMessage(std::string& messageFromClient, sf::IpAddress address, unsigned int short port) {
-    // if request can't be fulfilled, return user with empty username
-    // TODO
-}
-
 void Server::sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port) {
     char m[message.size()];
     for(int i = 0; i < message.size(); i++) {
