@@ -27,13 +27,12 @@ public:
     
 protected:
     
-    // edit this
     virtual void processUdpMessage(std::string& message, sf::IpAddress address, unsigned short port) = 0;
     ServerInterface *interface;
     
 private:
     
-    void checkForUdpMessages();
+    bool checkForUdpMessages();
     void sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port);
     
     sf::UdpSocket udpSocket;

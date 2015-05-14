@@ -21,7 +21,7 @@
 #include "ResourcePath.hpp"
 #include "App.h"
 #include "NetworkHandler.h"
-#include "Server.h"
+#include "TacticalWarfareServer.h"
 
 void* startNetwork(void* input) {
     NetworkHandler networkHandler(*(NetworkInterface*) input);
@@ -31,9 +31,15 @@ void* startNetwork(void* input) {
 }
 
 void* startServer(void* input) {
-    Server server(*(ServerInterface*) input);
+    TacticalWarfareServer server(*(ServerInterface*) input);
     while (true) {
         server.update();
+        // magic Thomas code: sleep 1 millisecond
+        struct timespec tim, tim2;
+        tim.tv_sec = 0;
+        tim.tv_nsec = 1000;
+        tim.tv_nsec *= 1000;
+        nanosleep(&tim , &tim2);
     }
 }
 

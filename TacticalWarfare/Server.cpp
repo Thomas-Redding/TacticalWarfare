@@ -18,32 +18,20 @@ Server::~Server() {
 
 void Server::update() {
     if(interface->shouldServerBeRunning) {
-        checkForUdpMessages();
+        while(checkForUdpMessages()) {};
     }
-    else {
-        // sleep 1 millisecond
-        struct timespec tim, tim2;
-        tim.tv_sec = 0;
-        tim.tv_nsec = 1000;      // microseconds
-        tim.tv_nsec *= 1000;
-        nanosleep(&tim , &tim2);
-    }
-    // sleep 1 microsecond
-    struct timespec tim, tim2;
-    tim.tv_sec = 0;
-    tim.tv_nsec = 1000;      // microseconds
-    tim.tv_nsec *= 1000;
-    nanosleep(&tim , &tim2);
 }
 
-void Server::checkForUdpMessages() {
+bool Server::checkForUdpMessages() {
     if(udpSocket.receive(udpData, UDP_DATA_LENGTH, udpLengthReceived, udpAddress, udpPort) != sf::Socket::NotReady) {
         std::string messageFromClient = "";
         for(int i = 0; i < udpLengthReceived; i++) {
             messageFromClient += udpData[i];
         }
         processUdpMessage(messageFromClient, udpAddress, udpPort);
+        return true;
     }
+    return false;
 }
 
 void Server::sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port) {
