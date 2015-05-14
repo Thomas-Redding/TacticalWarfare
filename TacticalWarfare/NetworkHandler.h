@@ -23,9 +23,11 @@ public:
 private:
     NetworkInterface *appInterface;
     void sendMessageToServer(std::string message);
-    void connectToServer();
-    sf::IpAddress serverAddress = "137.22.169.68";  // IP address of server - sd
-    unsigned short serverPort = 6670;
+    void connectToServer(sf::IpAddress addressOfServer, unsigned short portOfServer);
+    void sendUdpMessage(std::string message);
+    void receivedUdpMessage(std::string message);
+    sf::IpAddress serverAddress = "";
+    unsigned short serverPort = 0;
     sf::UdpSocket udpSocket;
 };
 
