@@ -20,6 +20,7 @@
 		284D8F831B0278200094DAB5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F781B0278200094DAB5 /* icon.png */; };
 		284D8F841B0278200094DAB5 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F791B0278200094DAB5 /* cute_image.jpg */; };
 		284D8F851B0278200094DAB5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 284D8F7A1B0278200094DAB5 /* button.png */; };
+		2854EE861B05148000562FC8 /* SFML Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = 2854EE851B05148000562FC8 /* SFML Frameworks */; };
 		28BEBD151AF934960010F154 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBD131AF934960010F154 /* Controller.cpp */; };
 		ECB7D7A21B027C800054501B /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECB7D7A01B027C800054501B /* User.cpp */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		284D8F781B0278200094DAB5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		284D8F791B0278200094DAB5 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
 		284D8F7A1B0278200094DAB5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		2854EE851B05148000562FC8 /* SFML Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SFML Frameworks"; sourceTree = "<group>"; };
 		28BEBD131AF934960010F154 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		28BEBD141AF934960010F154 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		ECB7D7A01B027C800054501B /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				28BEBD141AF934960010F154 /* Controller.h */,
 				28130DA31AF90592009E3B3B /* App.cpp */,
 				28130DA41AF90592009E3B3B /* App.h */,
+				2854EE851B05148000562FC8 /* SFML Frameworks */,
 				284D8F861B0278300094DAB5 /* Network */,
 				284D8F871B02783E0094DAB5 /* Main Menu */,
 				28130D801AF8FD73009E3B3B /* Supporting Files */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2854EE861B05148000562FC8 /* SFML Frameworks in Resources */,
 				284D8F841B0278200094DAB5 /* cute_image.jpg in Resources */,
 				284D8F851B0278200094DAB5 /* button.png in Resources */,
 				284D8F7E1B0278200094DAB5 /* nice_music.ogg in Resources */,

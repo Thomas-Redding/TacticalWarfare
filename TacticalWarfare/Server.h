@@ -27,7 +27,7 @@ public:
 private:
     void checkForUdpMessages();
     void sendMessage(std::string message, sf::IpAddress address, unsigned int port);
-    
+    void sendUdpMessages();
     void commandFromNewUser(std::string message, sf::IpAddress address, unsigned short port);
     void commandFromOldUser(std::unordered_map<size_t, User>::iterator client, std::string message);
     
