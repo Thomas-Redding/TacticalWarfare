@@ -29,26 +29,28 @@ void NetworkHandler::update() {
     if(appInterface->networkClosingStage == 0) {
         // everything is normal
         
-        // send messages to server
         appInterface->lock.lock();
         if(appInterface->sendToServer.size() != 0) {
+            // send messages to server
             std::string message = appInterface->sendToServer[0];
             appInterface->sendToServer.erase(appInterface->sendToServer.begin(), appInterface->sendToServer.begin()+1);
             appInterface->lock.unlock();
-            
-            // send message to server
             udpSocket.send(message.c_str(), message.length(), serverAddress, serverPort);
         }
         else {
             appInterface->lock.unlock();
         }
         
+        // read messages from server
         char buffer[1024];
         std::size_t received = 0;
         sf::IpAddress sender;
         unsigned short port;
         udpSocket.receive(buffer, sizeof(buffer), received, sender, port);
         std::cout << sender.toString() << " said: " << buffer << std::endl;
+        appInterface->lock.lock();
+        appInterface->receivedFromServer.push_back(std::string(buffer));
+        appInterface->lock.unlock();
     }
     else {
         appInterface->networkClosingStage = 2;
