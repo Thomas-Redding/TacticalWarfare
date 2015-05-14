@@ -17,11 +17,6 @@ NetworkHandler::~NetworkHandler()
 {
     // send disconnect packet
     udpSocket.unbind();
-}
-
-void NetworkHandler::connectToServer() {
-    // ----- The client -----
-    // Create a socket and bind it to some free port
     udpSocket.bind(sf::Socket::AnyPort);
 }
 
