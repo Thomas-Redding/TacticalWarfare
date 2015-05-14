@@ -14,8 +14,10 @@
 
 struct User {
     User();
+    
+    User(std::string username, sf::IpAddress address, unsigned short port) : username(username), address(address), port(port) {};
+    
     std::string username;
-    std::string password;
     sf::IpAddress address;
     unsigned short port;
 

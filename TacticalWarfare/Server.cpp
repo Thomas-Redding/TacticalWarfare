@@ -47,15 +47,21 @@ void Server::checkForUdpMessages() {
         
         std::unordered_map<size_t, User>::iterator it = users.find(udpAddress.toInteger());
         if(it == users.end()) {
-            commandFromNewUser(messageFromClient, udpAddress, udpPort);
-            return;
+            User user = commandFromNewUser(messageFromClient, udpAddress, udpPort);
+            if(user.username != "") {
+                users.insert(std::pair<size_t, User>(udpAddress.toInteger(), user));
+            }
         }
-        commandFromOldUser(it, messageFromClient);
+        else {
+            commandFromOldUser(it, messageFromClient);
+        }
     }
 }
 
-void Server::commandFromNewUser(std::string messageFromClient, sf::IpAddress address, unsigned int short port) {
+User Server::commandFromNewUser(std::string messageFromClient, sf::IpAddress address, unsigned int short port) {
+    // if request can't be fulfilled, return user with empty username
     // TODO
+    return User("", 0, 0);
 }
 
 void Server::commandFromOldUser(std::unordered_map<size_t, User>::iterator client, std::string message) {
