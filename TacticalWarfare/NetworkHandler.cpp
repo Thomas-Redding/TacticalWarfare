@@ -11,7 +11,6 @@
 NetworkHandler::NetworkHandler(NetworkInterface &interface) {
     appInterface = &interface;
     udpSocket.setBlocking(false); // just say no to blocking
-    udpSocket.bind(sf::Socket::AnyPort);
 }
 
 NetworkHandler::~NetworkHandler()
@@ -20,6 +19,11 @@ NetworkHandler::~NetworkHandler()
     udpSocket.unbind();
 }
 
+void NetworkHandler::connectToServer() {
+    // ----- The client -----
+    // Create a socket and bind it to some free port
+    udpSocket.bind(sf::Socket::AnyPort);
+}
 
 void NetworkHandler::update() {
     if(appInterface->networkClosingStage == 0) {
@@ -39,33 +43,12 @@ void NetworkHandler::update() {
             appInterface->lock.unlock();
         }
         
-        // get messages from from server - todo
+        char buffer[1024];
+        std::size_t received = 0;
         sf::IpAddress sender;
         unsigned short port;
-        std::size_t received;
-        char data[2048];
-        std::string potentialServerData;
-        unsigned int i;
-        unsigned int j;
-        for(i=0; i < 1000; i++) {
-            if(udpSocket.receive(data, 2048, received, sender, port) != sf::Socket::NotReady) {
-                potentialServerData = "";
-                for(j=0; j < received; j++) {
-                    potentialServerData += data[j];
-                }
-                if(potentialServerData!="") {
-                    appInterface->lock.lock();
-                    appInterface->receivedFromServer.push_back(potentialServerData);
-                    appInterface->lock.unlock();
-                }
-                else {
-                    break;
-                }
-            }
-            else {
-                break;
-            }
-        }
+        udpSocket.receive(buffer, sizeof(buffer), received, sender, port);
+        std::cout << sender.toString() << " said: " << buffer << std::endl;
     }
     else {
         appInterface->networkClosingStage = 2;
