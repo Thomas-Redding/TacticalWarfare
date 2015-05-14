@@ -17,9 +17,7 @@ Server::~Server() {
 }
 
 void Server::update() {
-    interface->lock.lock();
     if(interface->shouldServerBeRunning) {
-        interface->lock.unlock();
         checkForUdpMessages();
     }
     else {
@@ -44,17 +42,16 @@ void Server::checkForUdpMessages() {
         for(int i = 0; i < udpLengthReceived; i++) {
             messageFromClient += udpData[i];
         }
-        
         processUdpMessage(messageFromClient, udpAddress, udpPort);
     }
 }
 
-void Server::processUdpMessage(std::string messageFromClient, sf::IpAddress address, unsigned int short port) {
+void Server::processUdpMessage(std::string& messageFromClient, sf::IpAddress address, unsigned int short port) {
     // if request can't be fulfilled, return user with empty username
     // TODO
 }
 
-void Server::sendMessage(std::string message, sf::IpAddress address, unsigned int port) {
+void Server::sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port) {
     char m[message.size()];
     for(int i = 0; i < message.size(); i++) {
         m[i] = message[i];

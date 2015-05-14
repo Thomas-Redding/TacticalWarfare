@@ -25,13 +25,12 @@ public:
     ~Server();
     void update();
 private:
+    
+    // edit this
+    void processUdpMessage(std::string& message, sf::IpAddress address, unsigned short port);
+    
     void checkForUdpMessages();
-    void sendMessage(std::string message, sf::IpAddress address, unsigned int port);
-    void sendUdpMessages();
-    
-    void processUdpMessage(std::string message, sf::IpAddress address, unsigned short port);
-    
-    std::unordered_map<size_t, User> users;
+    void sendUdpMessages(std::string message, sf::IpAddress address, unsigned int port);
     
     sf::UdpSocket udpSocket;
     sf::IpAddress udpAddress;
@@ -40,7 +39,6 @@ private:
     char udpData[UDP_DATA_LENGTH];
     size_t udpLengthReceived;
     
-    std::vector<std::string> messagesFromClients;
     ServerInterface *interface;
 };
 
